@@ -1,0 +1,59 @@
+{
+  "name": "is_file_in",
+  "description": "A `function(filename)` thats checks if `'someDir/someFile.someExt'` passes through an of Array of `minimatch` / `RegExp` / `callbacks`, with inclusion OR negation/exclusion specs.",
+  "version": "0.1.0",
+  "homepage": "http://github.com/anodynos/is_file_in/",
+  "author": {
+    "name": "Agelos Pikoulas",
+    "email": "agelos.pikoulas@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "keywords": [
+    "minimatch",
+    "glob",
+    "filenames",
+    "pass",
+    "filter",
+    "files"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anodynos/is_file_in"
+  },
+  "bugs": {
+    "url": "http://github.com/anodynos/is_file_in/issues",
+    "email": "agelos.pikoulas@gmail.com"
+  },
+  "main": "./build/code/isFileIn.js",
+  "preferGlobal": false,
+  "scripts": {
+    "test": "grunt"
+  },
+  "directories": {
+    "doc": "./doc",
+    "dist": "./build"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "lodash": "*",
+    "minimatch": "1.0.x"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "coffee-script": "*",
+    "mocha": "*",
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.4.x",
+    "grunt-contrib-concat": "0.1.x",
+    "grunt-shell": "~0.3.x",
+    "grunt-contrib-watch": "~0.5.x",
+    "uberscore": "0.0.16"
+  }
+}
