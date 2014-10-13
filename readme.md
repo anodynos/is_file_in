@@ -33,9 +33,7 @@ The Array of filename specifications (or simply filenames), can expressed in eit
 
 ```javascript
 
-  var specs;
-
-  specs = [
+  var specs = [
     '**/recources/*',
     '!badFile.json',
     /.*\.someExtension$/i, '!',
@@ -51,10 +49,10 @@ The Array of filename specifications (or simply filenames), can expressed in eit
   isFileIn('includedFile.ext', specs) //true
 
   isFileIn('DRAFTFile.ext', specs) // false
-}
+
 ```
 
-See the specs for more examples.
+See the [specs](https://github.com/anodynos/is_file_in/blob/master/source/spec/isFileIn-spec.coffee) for more examples.
 
 # License
 
