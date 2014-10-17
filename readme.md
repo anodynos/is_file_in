@@ -1,9 +1,9 @@
-# is_file_in v0.1.0
+# is_file_in / isFileIn
 
 [![Build Status](https://travis-ci.org/anodynos/is_file_in.svg?branch=master)](https://travis-ci.org/anodynos/is_file_in)
 [![Up to date Status](https://david-dm.org/anodynos/is_file_in.png)](https://david-dm.org/anodynos/is_file_in.png)
 
-A `function(filename)` thats checks if `'someDir/someFile.someExt'` passes through an of Array of `minimatch` / `RegExp` / `callbacks`, with inclusion OR negation/exclusion specs.
+A `function(filename, specs)` thats checks if `'someFile.ext'` passes through an of Array of `minimatch` / `RegExp` / `callbacks` specs, with inclusion OR negation/exclusion '!' flag
 
 The Array of filename specifications (or simply filenames), can expressed in either:
 
@@ -18,11 +18,12 @@ The Array of filename specifications (or simply filenames), can expressed in eit
   negation / exclusion pattern.
 
   * A `function(filename){}` callback, returning `true` if filename is to be matched. Consistently it can have a negation / exclusion flag before it:
+
   ```
   [..., '!', function(f){ return f === 'excludeMe.js' }, ...]
   ```.
 
-  @note the trap: use a `true` (i.e matched) as the function result, preceded by '!' for **exclusion**. The common trap is to return a `false` for your *excluded matches* and then all your non-excluded with match with `true`, which is probably not what you want!.
+    Note the trap: use a `true` (i.e matched) as the function result, preceded by '!' for **exclusion**. The common trap is to return a `false` for your *excluded matches* and then all your non-excluded with match with `true`, which is probably not what you want!.
 
   * @todo: NOT IMPLEMENTED: An `Array<String|RegExp|Function|Array>, recursive, i.e
    ```
