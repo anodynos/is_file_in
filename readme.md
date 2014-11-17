@@ -1,5 +1,9 @@
 # is_file_in / isFileIn
 
+## Moved / Renamed
+
+**This project has moved to `npm install umatch` / http://github.com/anodynos/umatch**
+
 [![Build Status](https://travis-ci.org/anodynos/is_file_in.svg?branch=master)](https://travis-ci.org/anodynos/is_file_in)
 [![Up to date Status](https://david-dm.org/anodynos/is_file_in.png)](https://david-dm.org/anodynos/is_file_in.png)
 

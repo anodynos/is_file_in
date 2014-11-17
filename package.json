@@ -1,7 +1,7 @@
 {
   "name": "is_file_in",
   "description": "A `function(filename, specs)` thats checks if `'someFile.ext'` passes through an of Array of `minimatch` / `RegExp` / `callbacks` specs, with inclusion OR negation/exclusion '!' flag.",
-  "version": "0.1.1",
+  "version": "0.1.1-1",
   "homepage": "http://github.com/anodynos/is_file_in/",
   "author": {
     "name": "Agelos Pikoulas",
